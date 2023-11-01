@@ -1,0 +1,31 @@
+{
+  "name": "sst-prisma",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "sst dev",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove",
+    "console": "sst console",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "sst": "^2.32.2",
+    "aws-cdk-lib": "2.101.1",
+    "constructs": "10.2.69",
+    "typescript": "^5.2.2",
+    "@tsconfig/node18": "^18.2.2",
+    "@types/fs-extra": "^11.0.3",
+    "prisma": "^5.5.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "prisma": "^5.5.2",
+    "fs-extra": "^11.1.1",
+    "@prisma/client": "^5.5.2"
+  }
+}
